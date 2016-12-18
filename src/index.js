@@ -4,13 +4,14 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import PlayerReducer from './reducers/player';
 import App from './App';
+import Scoreboard from './containers/Scoreboard';
 import './index.css';
 
-const store = createStore(PlayerReducer);
+const store = createStore(PlayerReducer, window.devToolsExtenstion && window.devToolsExtenstion());
 
 ReactDOM.render(
     <Provider store={store}>
-        <App/>
+        <Scoreboard/>
     </Provider>,
     document.getElementById('root')
 );
