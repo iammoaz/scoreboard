@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 class Stopwatch extends Component {
     state = {
@@ -8,7 +8,7 @@ class Stopwatch extends Component {
     };
 
     componentDidMount() {
-        this.interval = setInterval(this.onTick;
+        this.interval = setInterval(this.onTick);
     };
 
     componentWillUnmount() {

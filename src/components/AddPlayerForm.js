@@ -1,4 +1,4 @@
-import React, { Component, PropType } from 'react';
+import React, { Component } from 'react';
 
 class AddPlayerForm extends Component {
     static propTypes: {
@@ -22,7 +22,7 @@ class AddPlayerForm extends Component {
 
     render() {
         return (
-            <div className="add-player.form">
+            <div className="add-player-form">
                 <form onSubmit={this.onSubmit}>
                     <input
                         type="text"
